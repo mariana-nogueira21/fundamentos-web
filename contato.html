@@ -4,35 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Contato</title>
 </head>
 <body>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="contato.html">Contato</a></li>
-  </ul>
+  <header>
+    <div class="container">
+      <di>
+        <h1><img src="assets/img/logo.png" alt="Logo do site"></h1>
+      </di>
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inspiracoes.html">Inspirações</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   
-  <h1>Entre em contato comigo</h1>
-  <form action="">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome">
-
-    <label for="nome">Email:</label>
-    <input type="email" id="email">
-
-    <label for="nome">Assunto:</label>
-    <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
-
-    <button>Enviar</button>
-
-    <h2>Endereço:</h2>
-
-    <p>Av. Giovanni Gronchi</p>
-    <p>São Paulo = SP</p>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.6479642268023!2d-46.73377788502132!3d-23.616955084655313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5133428b0bed%3A0x5b24067160db1de7!2sAv.%20Giovanni%20Gronchi%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1641826815955!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-  </form>
+  <main>
+    <h1>Entre em contato comigo</h1>
+    <div class="container">
+      <form action="">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+        <label for="nome">Email</label>
+        <input type="email" id="email" placeholder="seuemail@dominio.com">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX">
+        <label for="nome">Assunto</label>
+        <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
+        <fieldset>
+          <legend>Como prefere o nosso contato?</legend>
+          <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+          <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+          <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+        </fieldset>
+        <button>Enviar</button>
+        <h2>Endereço:</h2>
+        <p>Av. Giovanni Gronchi</p>
+        <p>São Paulo = SP</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.6479642268023!2d-46.73377788502132!3d-23.616955084655313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5133428b0bed%3A0x5b24067160db1de7!2sAv.%20Giovanni%20Gronchi%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1641826815955!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </form>
+    </div>
+  </main>
   
 </body>
 </html>

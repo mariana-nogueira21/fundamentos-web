@@ -1,10 +1,19 @@
-/* Estilos da página index.html */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h3 {
+  text-align: center;
+  font-weight: 100;
+}
 
 .container {
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
+  width: 940px;
+  margin: 0 auto;
 }
 
 #menu li {
@@ -22,8 +31,27 @@
   color: rgb(15, 15, 15);
 }
 
-/* img {
+/* Conteudo */
+.img-retrato {
   border-radius: 50%;
-} */
+}
 
-/* Estilos da página contato.html */
+.titulo-topico {
+  color: #F47F80;
+}
+
+.texto {
+  padding: 15px;
+  text-align: justify;
+}
+
+/* Formulario */
+
+form {
+  margin: 40px 0;
+}
+
+form label, form legend {
+  display: block;
+  margin: 0 0 10px;
+}
